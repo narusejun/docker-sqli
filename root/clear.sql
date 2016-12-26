@@ -1,0 +1,4 @@
+# 本文中でDBを構築していくので、消す
+
+DROP DATABASE IF EXISTS db;
+CREATE DATABASE db;
