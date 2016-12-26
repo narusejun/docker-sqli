@@ -1,6 +1,6 @@
 #!/bin/sh
 
-apk --no-cache --update add php7 php7-json php7-curl php7-pdo_mysql mysql mysql-client
+apk --no-cache --update add php7 php7-curl php7-pdo_mysql mysql mysql-client
 
 ln -s /usr/bin/php7 /usr/bin/php
 
