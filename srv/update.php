@@ -22,7 +22,7 @@
 	$ch = curl_init("https://github.com/narusejun/docker-sqli/commits/master");
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 	if(preg_match("@/commits/([0-9a-f]+)@", curl_exec($ch), $m)){
-		if($m[1] == trim(file_get_contents("/root/sha"))){
+		if($m[1] == trim(file_get_contents("/etc/version"))){
 ?>
 	<h4>Dockerイメージ <span class="label label-success">最新</span></h4>
 	<p>このイメージは最新版です。アップデートの必要はありません。</p>

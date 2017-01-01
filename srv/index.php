@@ -11,8 +11,8 @@
 		<div class="header clearfix">
 			<nav>
 				<ul class="nav nav-pills pull-right">
-					<li role="presentation" class="active"><a href="#">Home</a></li>
-					<li role="presentation"><a href="ctf.php">CTF</a></li>
+					<li role="presentation" class="active"><a href="javascript:">Home</a></li>
+					<li role="presentation"><a href="/ctf/">CTF</a></li>
 				</ul>
 			</nav>
 			<h3 class="text-muted">SQLi超入門 演習</h3>
@@ -44,7 +44,7 @@
 				</ul>
 				<h4>演習問題</h4>
 				<ul>
-					<li><a href="ctf.php">演習問題ページへ</a></li>
+					<li><a href="/ctf/">演習問題ページへ</a></li>
 				</ul>
 			</div>
 			<div class="col-lg-6">
@@ -59,6 +59,16 @@
 					<th>ページ</th>
 					<th>誤</th>
 					<th>正</th>
+				</tr>
+				<tr>
+					<td>p.18</td>
+					<td>$ docker exec -it sqli mysql db < ~/autocreate.sql</td>
+					<td>$ docker exec -it sqli <strong>sh /root/database.sh</strong></td>
+				</tr>
+				<tr>
+					<td>p.33</td>
+					<td>次に列名ですここでは、</td>
+					<td>次に列名です<strong>。</strong>ここでは、</td>
 				</tr>
 				<tr>
 					<td>p.62</td>

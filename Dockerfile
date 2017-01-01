@@ -6,7 +6,10 @@ ENTRYPOINT ["sh", "/root/start.sh"]
 
 COPY srv /srv
 COPY root /root
-COPY user.ini /etc/php7/conf.d/user.ini
-COPY .git/refs/heads/master /root/sha
 
 RUN sh /root/setup.sh
+
+COPY user.ini /etc/php7/conf.d/user.ini
+COPY default.conf /etc/nginx/conf.d/default.conf
+
+COPY .git/refs/heads/master /etc/version

@@ -22,11 +22,3 @@ CREATE TABLE account (user VARCHAR(16), pass TEXT);
 INSERT INTO account VALUES ("naruse", "s3cretp4ssw0rd");
 INSERT INTO account VALUES ("sakagami", "h1mit5u");
 INSERT INTO account VALUES ("nitou", SHA1(RAND()));
-
-# 演習用DB
-
-DROP DATABASE IF EXISTS ctf;
-CREATE DATABASE ctf;
-USE ctf;
-
-/* TODO */

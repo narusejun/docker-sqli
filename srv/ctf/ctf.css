@@ -1,0 +1,76 @@
+body {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #333;
+	color: #EEE;
+}
+
+a {
+	color: #0F0;
+}
+a:hover {
+	color: #0D0;
+}
+li:hover a {
+	color: #0D0 !important;
+	background-color: #444 !important;
+}
+li.active > a {
+	color: #333 !important;
+	background-color: #0D0 !important;
+}
+
+.header {
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid #444;
+}
+.header h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 40px;
+	color: #EEE;
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 768px;
+	}
+}
+
+.solved {
+	background-color: #090;
+	padding: 2px 8px;
+}
+
+.desc {
+	padding: 2em 1em;
+	border-bottom: 1px solid #444;
+}
+.problem {
+	padding: 0 .5em 2em .5em;
+	margin-bottom: 2em;
+	border-bottom: 1px solid #444;
+}
+.problem h1 small {
+	color: inherit;
+}
+input, button {
+	border: 1px solid #eee;
+	background-color: #333;
+	color: #ddd;
+}
+input {
+	width: 20em;
+	font-weight: 400;
+}
+button {
+	font-weight: 700;
+}
+
+section {
+	padding-bottom: 1em;
+}
+aside {
+	display: none;
+}
